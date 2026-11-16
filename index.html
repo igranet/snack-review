@@ -29,20 +29,46 @@ h2{font-family:"Libre Franklin",sans-serif;font-size:1rem;text-transform:upperca
 .box{border:1px solid var(--ink);padding:20px;margin:40px 0;font-family:"Libre Franklin",sans-serif;font-size:.92rem;line-height:1.55}
 .stars{font-size:1.8rem;letter-spacing:.1em;color:var(--accent)}
 .box dl{margin:12px 0 0}.box dt{font-weight:800;text-transform:uppercase;font-size:.72rem;letter-spacing:.08em;margin-top:12px}.box dd{margin:2px 0 0}
+.topbar{display:flex;justify-content:space-between;align-items:center;font-family:"Libre Franklin",sans-serif;font-size:.72rem;padding:10px 0;gap:8px}
+.topbar a{color:var(--ink);text-decoration:none}
+.btn{background:#567b95;color:#fff!important;padding:6px 10px;border-radius:3px;font-weight:600;text-transform:uppercase;font-size:.65rem}
+.btn.ghost{background:none;border:1px solid var(--ink);color:var(--ink)!important}
+nav{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;font-family:"Libre Franklin",sans-serif;font-size:.78rem;padding:10px 0;border-bottom:1px solid var(--rule)}
+nav a{color:var(--ink);text-decoration:none}
+.share{display:flex;gap:8px;flex-wrap:wrap;font-family:"Libre Franklin",sans-serif;font-size:.78rem;margin:-14px 0 28px}
+.share span{border:1px solid var(--rule);border-radius:20px;padding:6px 12px;cursor:pointer}
+.share .gift{font-weight:600}
+figure{margin:0 0 28px}
+.photo{aspect-ratio:3/2;background:linear-gradient(135deg,#c9a46a,#e8d9b5 40%,#8c3a2b 70%,#e9e2cf);display:flex;align-items:center;justify-content:center;font-size:4rem}
+figcaption{font-family:"Libre Franklin",sans-serif;font-size:.75rem;color:var(--muted);margin-top:6px}
+.comments{border-top:3px solid var(--ink);margin-top:50px;padding-top:16px;font-family:"Libre Franklin",sans-serif}
+.comments h3{margin:0 0 4px;font-size:1.3rem}
+.tabs{display:flex;gap:18px;font-size:.78rem;font-weight:600;border-bottom:1px solid var(--rule);margin:14px 0}
+.tabs span{padding:8px 0}.tabs .on{border-bottom:3px solid var(--ink)}
+.c{padding:14px 0;border-bottom:1px solid var(--rule);font-size:.92rem;line-height:1.5}
+.c .who{font-weight:800}.c .where{color:var(--muted);font-size:.78rem}
+.c .pick{background:#e6ecf0;color:#1f4a66;font-size:.65rem;font-weight:800;text-transform:uppercase;padding:2px 6px;margin-left:6px}
+.c .meta{color:var(--muted);font-size:.75rem;margin-top:6px}
+.reply{margin-left:28px;border-left:2px solid var(--rule);padding-left:14px}
+footer{margin-top:40px;font-family:"Libre Franklin",sans-serif;font-size:.7rem;color:var(--muted);text-align:center;border-top:1px solid var(--rule);padding-top:16px}
 .correction{font-size:.95rem;font-style:italic;color:var(--muted);border-top:1px solid var(--rule);padding-top:16px}
 </style>
 </head>
 <body>
 <div class="wrap">
+<div class="topbar"><a href="#">☰ &nbsp;Sections</a><span><a class="btn" href="#">Subscribe for $0.25/week</a> <a class="btn ghost" href="#">Log in</a></span></div>
 <header>
   <p class="mast">The New York Snacks</p>
-  <div class="dateline"><span>Stanford, Calif.</span><span>Sunday, November 15, 2026</span><span>Dining</span></div>
+  <div class="dateline"><span>Stanford, Calif.</span><span>Sunday, November 15, 2026</span><span>Today’s Paper</span></div>
 </header>
+<nav><a href="#">World</a><a href="#">U.S.</a><a href="#">Dorms</a><a href="#">Opinion</a><a href="#"><b>Food</b></a><a href="#">Cucumbers (Never)</a><a href="#">Wirecutter: Best Puffs</a></nav>
 
 <div class="kicker">Restaurant Review</div>
 <h1>In Room 1005, a Snack Platter Asks the Big Questions. Mostly, “Why Cucumbers?”</h1>
 <p class="dek">A dorm-room tasting menu in Evergreen C offers salami, ambition, a cheese-puff heist and a gastrointestinal epilogue no one requested.</p>
-<div class="byline">By <b>Isaiah Granet</b> &nbsp;·&nbsp; Who also ate it</div>
+<div class="share"><span class="gift">🎁 Give this article</span><span>↗ Share</span><span>🔖 Save</span><span>💬 1,005</span></div>
+<figure><div class="photo">🍎🧀🥨🥒</div><figcaption>The platter, moments before the cheese-puff incident. The cucumbers, at lower right, declined to comment. <i>Isaiah Granet for The New York Snacks</i></figcaption></figure>
+<div class="byline">By <b>Isaiah Granet</b> &nbsp;·&nbsp; Who also ate it<br><span style="color:var(--muted)">Published Nov. 15, 2026 &nbsp;·&nbsp; Updated 9:14 p.m. ET &nbsp;·&nbsp; 6 min read</span></div>
 
 <p class="first">There is a particular silence that falls over a room when a plate arrives that its creator believes in. I have heard it at Le Bernardin. I heard it again last week on the tenth floor of Evergreen C, Room 1005, when a platter was placed on a bed (there is no table; there is never a table) with the quiet confidence of a woman who had been to Trader Joe’s and had made choices.</p>
 
@@ -104,6 +130,50 @@ h2{font-family:"Libre Franklin",sans-serif;font-size:1rem;text-transform:upperca
 </div>
 
 <p class="correction">Correction: An earlier version of this review described the critic as “impartial.” He is dating the chef.</p>
+
+<section class="comments">
+  <h3>1,005 Comments</h3>
+  <div style="font-size:.8rem;color:var(--muted)">The Times Snacks needs your voice. We welcome your on-topic commentary, criticism and cucumber discourse.</div>
+  <div class="tabs"><span class="on">Reader Picks</span><span>All</span><span>Most Puffs Eaten</span></div>
+
+  <div class="c"><span class="who">Margaret H.</span><span class="pick">Reader Pick</span><div class="where">Upper West Side · 2h ago</div>
+  I have read this paper for 51 years and I have never seen a critic review a meal he was emotionally incapable of being honest about. Four stars? For a platter that served him ONE cheese puff? This is not criticism. This is a hostage video.<div class="meta">Recommend 2,341 &nbsp;·&nbsp; Reply</div></div>
+
+  <div class="c reply"><span class="who">Isaiah G.</span><div class="where">Evergreen C · 2h ago</div>
+  Margaret, I am fine. Blink twice is not a thing. Please stop.<div class="meta">Recommend 1,187</div></div>
+
+  <div class="c"><span class="who">CucumberTruther</span><div class="where">Sacramento · 3h ago</div>
+  The cucumber slander in this piece is frankly disgraceful. Cucumbers are 96% water and 4% elegance. The critic clearly has an unrefined palate, which is consistent with someone who ate "a regrettable amount" of salami.<div class="meta">Recommend 12 &nbsp;·&nbsp; Reply</div></div>
+
+  <div class="c reply"><span class="who">Dan</span><div class="where">Brooklyn · 3h ago</div>
+  12 recommends. That's every cucumber fan in America and their accounts are probably all you.<div class="meta">Recommend 904</div></div>
+
+  <div class="c reply"><span class="who">CucumberTruther</span><div class="where">Sacramento · 2h ago</div>
+  I will not be silenced by Big Puff.<div class="meta">Recommend 38</div></div>
+
+  <div class="c"><span class="who">Dr. R. Feinberg, Gastroenterologist</span><span class="pick">Times Pick</span><div class="where">Palo Alto · 4h ago</div>
+  Professionally, I can say that consuming an entire bag of white cheddar puffs in under ten minutes, followed by chocolate pretzels, is a very common cause of a stomach ache. Personally, I can say it sounds worth it.<div class="meta">Recommend 1,876 &nbsp;·&nbsp; Reply</div></div>
+
+  <div class="c"><span class="who">Evergreen C, Floor 10 Resident</span><div class="where">Stanford · 4h ago</div>
+  So THAT'S what all the crunching was. Some of us have midterms.<div class="meta">Recommend 640 &nbsp;·&nbsp; Reply</div></div>
+
+  <div class="c"><span class="who">Priya</span><div class="where">Chicago · 5h ago</div>
+  Notice how he spends 300 words on the cucumbers and one sentence on the rocket crackers, which he admits were "genuinely very good." Classic critic behavior. Negativity sells, joy gets a Ringo comparison.<div class="meta">Recommend 733 &nbsp;·&nbsp; Reply</div></div>
+
+  <div class="c reply"><span class="who">Tom W.</span><div class="where">Boston · 4h ago</div>
+  Ringo was a great drummer and I will not have him used as a punchline in the Food section.<div class="meta">Recommend 411</div></div>
+
+  <div class="c"><span class="who">The Chef</span><span class="pick">Verified</span><div class="where">Room 1005 · 1h ago</div>
+  The puffs were for both of us. He was simply too slow. I stand by the cucumbers. My stomach is fine now, thank you to everyone who asked, and to the one person who did not (Isaiah).<div class="meta">Recommend 5,212 &nbsp;·&nbsp; Reply</div></div>
+
+  <div class="c reply"><span class="who">Isaiah G.</span><div class="where">Evergreen C · 58m ago</div>
+  I asked! I asked like four times!<div class="meta">Recommend 89</div></div>
+
+  <div class="c reply"><span class="who">Margaret H.</span><div class="where">Upper West Side · 51m ago</div>
+  Not enough times, sweetie.<div class="meta">Recommend 3,090</div></div>
+</section>
+
+<footer>© 2026 The New York Snacks Company &nbsp;·&nbsp; A parody, lovingly made &nbsp;·&nbsp; Terms of Snacking &nbsp;·&nbsp; Cucumber Policy</footer>
 </div>
 </body>
 </html>
